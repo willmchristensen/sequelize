@@ -19,7 +19,7 @@ refresher on Eager vs. Lazy Loading.
 
 ## Eager loading
 
-Find the route for the path `/tree-insects`. Implement the eager loading
+Find the route for the path `/trees-insects`. Implement the eager loading
 approach, to include the `insects` near each of the trees. Please return only
 the `id` and `name` for each `Insect`, and order them alphabetically.
 
@@ -86,7 +86,7 @@ If you complete both challenges, the response will look something like
 
 ## Lazy loading
 
-Find the route for the path `/tree-insects`. Implement the lazy loading
+Find the route for the path `/insects-trees`. Implement the lazy loading
 approach, to include the `insects` near each of the trees. Please return only
 the `id` and `tree` for each `Tree`, and order them alphabetically.
 

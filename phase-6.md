@@ -24,7 +24,28 @@ JOIN table by first querying references to the `Insects` and `Trees` tables.
 
 Follow the standard steps for dynamic seed data:
 
-* Create a constant to hold the provided seed data as shown above.
+* Create a constant to hold the provided seed data:
+
+```js
+[
+  {
+    insect: { name: "Western Pygmy Blue Butterfly" },
+    trees: [
+      { tree: "General Sherman" },
+      { tree: "General Grant" },
+      { tree: "Lincoln" },
+      { tree: "Stagg" },
+    ],
+  },
+  {
+    insect: { name: "Patu Digua Spider" },
+    trees: [
+      { tree: "Stagg" },
+    ],
+  },
+]
+```
+
 * Modify the `up` function to insert the seed data.
 * Modify the `down` function to remove the seed data.
 * Use the **Sequelize CLI** to run the seeder.
