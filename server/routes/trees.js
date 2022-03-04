@@ -2,9 +2,6 @@
 const express = require('express');
 const router = express.Router();
 
-// Import environment variables in order to connect to database - DO NOT MODIFY
-require('dotenv').config();
-
 /**
  * BASIC PHASE 1, Step A - Import model
  */
@@ -30,6 +27,7 @@ router.get('/', async (req, res, next) => {
     let trees = [];
 
     // Your code here
+
     res.json(trees);
 });
 
@@ -47,6 +45,7 @@ router.get('/:id', async (req, res, next) => {
 
     try {
         // Your code here
+
         if (tree) {
             res.json(tree);
         } else {
@@ -190,6 +189,7 @@ router.put('/:id', async (req, res, next) => {
  */
 router.get('/search/:value', async (req, res, next) => {
     let trees = [];
+
 
     res.json(trees);
 });

@@ -2,9 +2,6 @@
 const express = require('express');
 const router = express.Router();
 
-// Import environment variables in order to connect to database - DO NOT MODIFY
-require('dotenv').config();
-
 // Import models - DO NOT MODIFY
 const { Insect, Tree } = require('../db/models');
 const { Op } = require("sequelize");

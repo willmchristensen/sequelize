@@ -11,11 +11,6 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      // Phase 5
-      Insect.belongsToMany(
-          models.Tree,
-          { through: models.InsectTree}
-      );
     }
   };
   Insect.init({
