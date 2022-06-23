@@ -16,8 +16,8 @@ Answer:
 
 | attribute | type    | constraints                                                   |
 | --------- | ------- | ------------------------------------------------------------- |
-| insectId  | integer | NOT NULL, FOREIGN KEY REFERENCES Bands(id), ON DELETE CASCADE |
-| treeId    | integer | NOT NULL, FOREIGN KEY REFERENCES Bands(id), ON DELETE CASCADE |
+| insectId  | integer | NOT NULL, FOREIGN KEY REFERENCES Insects(id), ON DELETE CASCADE |
+| treeId    | integer | NOT NULL, FOREIGN KEY REFERENCES Trees(id), ON DELETE CASCADE |
 
 ## Create model and migration
 
