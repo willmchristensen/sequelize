@@ -19,6 +19,8 @@ Answer:
 | insectId  | integer | NOT NULL, FOREIGN KEY REFERENCES Insects(id), ON DELETE CASCADE |
 | treeId    | integer | NOT NULL, FOREIGN KEY REFERENCES Trees(id), ON DELETE CASCADE |
 
+![db-schema]
+
 ## Create model and migration
 
 Use **Sequelize CLI** command to create the model `InsectTree` with its
@@ -41,3 +43,5 @@ to and that you are connecting through the `InsectTree` model.
 
 In the next phase, you will interact with these associations as you implement
 dynamic seeding. If you run into any errors, you may revisit this phase.
+
+[db-schema]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-11/practices/Trees-Insects-db-schema.png
