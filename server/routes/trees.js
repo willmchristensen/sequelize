@@ -6,6 +6,7 @@ const router = express.Router();
  * BASIC PHASE 1, Step A - Import model
  */
 // Your code here
+const {Tree, sequelize} = require('../db/models');
 
 /**
  * INTERMEDIATE BONUS PHASE 1 (OPTIONAL), Step A:
@@ -27,7 +28,10 @@ router.get('/', async (req, res, next) => {
     let trees = [];
 
     // Your code here
-
+    trees = await Tree.findAll({
+        attributes: ['heightFt', 'tree', 'id'],
+        order: [['heightFt', 'DESC']]
+    });
     res.json(trees);
 });
 
